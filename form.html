@@ -2,11 +2,69 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="description" content="this is html page which contains all form tags and attribute ">
+  <meta name="keywords" content="HTML, form tags and attribute">
+  <meta name="author" content="Glory Okafor">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Form assignment</title>
 </head>
 <body>
-  
+  <form action="/" method="get" method="post" method="dialog">
+
+    <label for="name">this is a text input: </label>
+    <input type="text" id="name" placeholder="please enter your name"><br>
+
+    <label for="color">this is a color input:</label>
+    <input type="color" name="this is a color" id="color"><br>
+
+    <label for="rPwd">enter password: </label>
+    <input type="text" id="rPwd"  placeholder="input password"><br>
+
+
+    <input type="checkbox" name="this is a checkbox" id="checkbox">
+    <label for="checkbox">this is a checkbox: </label><br>
+
+    <label for="date">enter date: </label>
+    <input type="date" name="date" id="date"><br>
+
+    <label for="d/t">enter date and time: </label>
+    <input type="datetime" name="" id="d/t"><br>
+
+    <label for="date">enter date: </label>
+    <input type="datetime-local" name="" id="">
+    <label for="date">enter date: </label>
+    <input type="email" name="email" id="email">
+    <label for="date">enter date: </label>
+    <input type="file" name="file" id=file"">
+    <label for="date">enter date: </label>
+    <input type="hidden" name="hide">
+    <label for="date">enter date: </label>
+    <input type="image" src="/coffee menu/image/download.jpg" alt="">
+    <input type="month" name="month" id="month">
+    <input type="number" name="num" id="num">
+    <input type="radio" name="radio" id="radio">
+    <label for="radio">this is a radio input: </label>
+
+
+    <textarea name="" id="" cols="30" rows="10">
+      this is a comment section
+    </textarea> 
+    
+    
+    <fieldset> 
+      <input type="range" name="range" id="range">
+      <input type="reset" value="this is a reset button">
+      <input type="search" name="searchbar" id="searchbar">
+      <input type="submit" value="this is a submit button">
+      <input type="tel" name="tel" id="tel">
+      <input type="time" name="time" id="time">
+      <input type="url" name="url" id="url">
+      <input type="week" name="week" id="week">
+      <input type="button" value="this is a input button"> 
+    </fieldset>
+
+
+  </form>
 </body>
 </html>
