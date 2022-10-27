@@ -1,0 +1,92 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  background-image: url(/formWorkshopAssignment/image/crop.jfif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 790px;
+  width: 500px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: white;
+  font-size: 18px;
+  padding: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.inBox{
+  height: 50px;
+  width: 410px;
+  margin-bottom: 20px;
+  margin-top: 25px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 7px;
+  text-transform: capitalize;
+  border: 3px solid #4945ac;
+  background-color: transparent;
+  color: rgb(154, 153, 153);
+  outline: none;
+
+}
+
+.inBox::placeholder{
+  font-size: 18px;
+}
+
+input[type="radio"] {
+  /* remove standard background appearance */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* create custom radiobutton appearance */
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  /* background-color only for content */
+  background-clip: content-box;
+  border: 2px solid red;
+  background-color: #e7e6e7;
+  border-radius: 50%;
+}
+
+input[type="radio"]:checked {
+  background-color: red;
+}
+
+
+input[type=checkbox] {
+  accent-color: red;
+}
+
+fieldset{
+  margin-bottom: 25px;
+  padding: 15px;
+  border-color: red;
+}
+
+
+
+label{
+  margin-bottom: 15px;
+}
+
+.submit{
+  background-color: #4945ac;
+  color: #ffffff;
+  width: 421px;
+  height: 50px;
+  border: none;
+  border-radius: 7px;
+  font-size: 25px;
+}
+
+.submit:hover{
+  background-color: #302d92;
+}
