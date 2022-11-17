@@ -2,8 +2,8 @@
 
 ---
 
-Description
+### Description
 
 ---
 
-## This Is a Mobile first responsive web design made with  HTML and CSS. After Doing my own  research and surfing the Internet, I learn't how responsiveness works
+## This Is a Mobile first responsive web design made with  HTML and CSS.This task was built with responsive grid, media queries with diffrent breakpoints for Mobile, Tablet , Laptop and Larger sreen.
