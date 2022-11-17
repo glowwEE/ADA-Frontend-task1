@@ -1,34 +1,157 @@
 *{
-  padding: 0;
-  margin: 0;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(28, 28, 28);
+  color: rgb(214, 214, 214);
 }
 
 
 /* MOBILE vIEW */
-[class*="col-"] {
-  width: 100%;
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  [class*="col-"] {
+    width: 100%;
+
+  }
 }
-/* DESXTOP VIEW */
-
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
 
 
+  @media screen and (min-width: 600px) {
+  /*  Tablet view*/
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+
+}
+
+@media screen and (min-width: 992px) {
+  /* DESXTOP VIEW */
+
+  header{ background-color: blue;}
+
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+}
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
 
 header h1{
-  background-color: purple;
+  background-color: red;
   color: #fff;
   padding: 15px;
+
+}
+
+.row{
+  margin-top: 90px;
+
+}
+
+
+
+.row::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+img{
+  max-width: 100%;
+}
+
+.sideList{
+  margin: 0;
+  padding: 0;
+}
+
+.sideItem{
+  padding: 10px;
+  margin-bottom: 7px;
+  list-style: none;
+  background-color: rgba(255, 0, 0, 0.519);
+  cursor: pointer;
+
+}
+
+.sideItem:hover{
+  background-color: rgb(189, 3, 3);
+}
+
+.main{
+  margin-top: 35px;
+}
+
+.main h2{
+  border-bottom: 1px solid red;
+  border-top: 1px solid red;
+  margin-bottom: 15px;
+}
+
+.main p{
+  margin-bottom: 15px;
+}
+aside{
+  margin-top: 35px;
+
+}
+
+aside h2{
+  margin-bottom: 15px;
+}
+
+aside span{
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.gif{
+  margin: auto;
+  margin-top: 15px;
+}
+
+footer{
+  background-color: rgb(209, 6, 6);
+  padding: 15px;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 35px;
+
 
 }
