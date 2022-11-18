@@ -17,8 +17,30 @@ body{
 @media only screen and (max-width: 600px) {
   [class*="col-"] {
     width: 100%;
-
   }
+
+  header h1,
+  footer{
+    background-color: red;
+  }
+
+  .main h2{
+    border-bottom: 1px solid red;
+    border-top: 1px solid red;
+  }
+
+  .sideItem{
+  padding: 10px;
+  margin-bottom: 7px;
+  list-style: none;
+  background-color: rgba(255, 0, 0, 0.519);
+  cursor: pointer;
+
+}
+
+.sideItem:hover{
+  background-color: rgb(189, 3, 3);
+}
 }
 
 
@@ -36,14 +58,34 @@ body{
   .col-s-10 {width: 83.33%;}
   .col-s-11 {width: 91.66%;}
   .col-s-12 {width: 100%;}
+  
+  header h1,
+  footer{
+    background-color: red;
+  }
+
+  .main h2{
+    border-bottom: 1px solid red;
+    border-top: 1px solid red;
+  }
+
+  .sideItem{
+  padding: 10px;
+  margin-bottom: 7px;
+  list-style: none;
+  background-color: rgba(255, 0, 0, 0.519);
+  cursor: pointer;
+
+}
+
+.sideItem:hover{
+  background-color: rgb(189, 3, 3);
+}
 
 }
 
 @media screen and (min-width: 992px) {
   /* DESXTOP VIEW */
-
-  header{ background-color: blue;}
-
   .col-1 {width: 8.33%;}
   .col-2 {width: 16.66%;}
   .col-3 {width: 25%;}
@@ -57,6 +99,30 @@ body{
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
 
+  header h1,
+  footer{
+    background-color: rgb(0, 103, 221);
+  }
+
+  .sideItem{
+    padding: 10px;
+    margin-bottom: 7px;
+    list-style: none;
+    background-color: rgba(44, 223, 255, 0.519);
+    cursor: pointer;
+  
+  }
+  
+  .sideItem:hover{
+    background-color: rgb(0, 124, 177);
+  }
+
+  .main h2{
+    border-bottom: 1px solid rgb(0, 115, 255);
+    border-top: 1px solid rgb(0, 115, 255);
+    margin-bottom: 15px;
+  }
+
 }
 
 header{
@@ -68,7 +134,7 @@ header{
 }
 
 header h1{
-  background-color: red;
+  /* background-color: blue; */
   color: #fff;
   padding: 15px;
 
@@ -101,7 +167,7 @@ img{
   padding: 0;
 }
 
-.sideItem{
+/* .sideItem{
   padding: 10px;
   margin-bottom: 7px;
   list-style: none;
@@ -112,15 +178,15 @@ img{
 
 .sideItem:hover{
   background-color: rgb(189, 3, 3);
-}
+} */
 
 .main{
   margin-top: 35px;
 }
 
 .main h2{
-  border-bottom: 1px solid red;
-  border-top: 1px solid red;
+  /* border-bottom: 1px solid red;
+  border-top: 1px solid red; */
   margin-bottom: 15px;
 }
 
@@ -147,7 +213,7 @@ aside span{
 }
 
 footer{
-  background-color: rgb(209, 6, 6);
+  /* background-color: rgb(209, 6, 6); */
   padding: 15px;
   text-align: center;
   font-size: 18px;
