@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Glory Okafor">
+  <meta name="description" content="A login form page designed with bootsrap">
+  <meta name="keywords" content="HTML,CSS,preprocessor,bootstrap">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form </title>
+
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS STYLES -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Bootstrap links -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <script
+    src="https://code.iconify.design/3/3.0.0/iconify.min.js"
+    defer>
+  </script>
+</head>
+<body>
+  <main class="wrapper">
+    <header class="header gx-0 position-fixed top-0 start-0 end-0 bg-white">
+      <div class="row border-2 border-bottom py-4 gx-0 w-90 mx-auto">
+        <section class="col-sm-6 d-flex align-items-center">
+          <figure class="img-wrapper d-lg-block">
+            <a href="/">
+              <img
+                src="./Assets/images/dribble.svg"
+                alt="dribble-logo"
+                class="img-fluid"
+              />
+            </a>
+          </figure>
+
+          <div class="text-wrapper ms-lg-3">
+            <p class="m-0 text-capitalize fw-semibold fs lh-sm mb-1">
+              lovebirds website login design
+            </p>
+            <p class="m-0 fs-custom text-muted">
+              by <span class="text-capitalize">luke peake</span>
+            </p>
+          </div>
+        </section>
+        <section
+          class="col-sm-6 d-flex justify-content-center justify-content-sm-end align-items-center thumbnails-nav"
+        >
+          <figure class="thumbnail-figure mb-0 me-3">
+            <a href="#">
+              <img src="./Assets/images/thumbnail-one.webp" alt="thumbnail-one" />
+            </a>
+          </figure>
+          <figure class="thumbnail-figure mb-0">
+            <a href="#">
+              <img
+                src="./Assets/images/thumbnail-2.webp"
+                alt="thumbnail-one"
+                class="active"
+              />
+            </a>
+          </figure>
+        </section>
+      </div>
+    </header>
+
+    <section class="body-content">
+      <div class="d-flex flex-column flex-md-row bd">
+        <section class="card-image mb-0 w-custom position-relative">
+          <img
+            src="./Assets/images/birdie-copy.svg"
+            alt="birdeie"
+            class="img-fluid"
+          />
+          <div
+            class="position-absolute text-white bottom-0 start-0 end-0 pos-abs"
+          >
+            <h3 class="w-90 mx-auto text-center">Maecenas mattis egestas</h3>
+            <p class="w-90 mx-auto text-center">
+              Erdum et malesuada fames ac ante ipsum primis in faucibus
+              uspendisse porta.
+            </p>
+            <ul
+              class="indicators my-4 w-90 mx-auto d-flex justify-content-center align-items-center"
+            >
+              <li class="bg-white"></li>
+              <li class="bg-grey"></li>
+              <li class="bg-grey"></li>
+              <li class="bg-grey"></li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="w-custom">
+          <div class="pt-80">
+            <h1 class="w-100 text-center text-capitalize ds text-muted">
+              lovebirds
+            </h1>
+
+            <div class="form-container">
+              <p class="mt-lg-40 w-100 text-center fw-semibold text-muted">
+                Welcome to <span class="text-capitalize">lovebirds</span>
+              </p>
+
+              <form class="form">
+                <div class="form-contents mt-5">
+                  <label for="name" class="form-label text-muted">
+                    Email</label
+                  >
+                  <input
+                    type="email"
+                    id="name"
+                    placeholder=" harrypotter@gmail.com"
+                    class="form-control border-0 border-bottom rounded-0 border-1 ps-0 user-email"
+                  />
+                  <p class="email-error text-danger text-sm-14"></p>
+                </div>
+
+                <div class="form-contents mt-4">
+                  <label for="pwd" class="form-label text-muted">
+                    Password</label
+                  >
+                  <input
+                    type="password"
+                    id="pwd"
+                    placeholder="********"
+                    class="form-control border-0 border-bottom rounded-0 border-1 ps-0 user-password"
+                  />
+                  <p class="password-error text-danger text-sm-14"></p>
+                </div>
+                <p
+                  class="w-100 mt-2 text-end text-success text-capitalize fs-12"
+                >
+                  forgot password?
+                </p>
+
+                <div class="mx-auto mt-4 btn-wrapper overflow-hidden">
+                  <button class="btn btn-secondary login-btn">Sign in</button>
+                </div>
+
+                <div
+                  class="or-wrapper position-relative bg-secondary my-5 mx-auto"
+                >
+                  <p
+                    class="text-muted position-absolute top-0 start-50 translate-middle m-0 bg-white"
+                  >
+                    or
+                  </p>
+                </div>
+                <div class="googleBtn-container mx-auto">
+                  <div class="googleBtn">
+                    <button class="btn" type="button">
+                      <span
+                        class="iconify me-2"
+                        data-icon="flat-color-icons:google"
+                      ></span
+                      >Sign in with Google
+                    </button>
+                  </div>
+                </div>
+
+                <p class="my-3 text-muted text-capitalize w-100 text-center">
+                  new lovebirds?
+                  <a href="#" class="text-success text-decoration-underline"
+                    >create account.</a
+                  >
+                </p>
+              </form>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+    <!-- toast notifications success-->
+    <section
+      class="toast bg-success position-fixed top-0 end-top-20 zIndex-3"
+      role="alert"
+      aria-live="assertive"
+      aria-atomic="true"
+      id="toastLive"
+    >
+      <div class="toast-header bg-transparent justify-content-end text-white">
+        <button
+          type="button"
+          class="btn btn-secondary btn-sm bg-transparent border-0"
+          data-bs-dismiss="toast"
+        >
+          Close
+        </button>
+      </div>
+      <div class="toast-body text-white p-2">
+        <p class="text-capitalize text-center">
+          you have successfully logged in!!!
+        </p>
+      </div>
+    </section>
+
+    <!-- toast notification for error -->
+    <section
+      class="toast bg-danger position-fixed top-0 end-top-20 zIndex-3"
+      role="alert"
+      aria-live="assertive"
+      aria-atomic="true"
+      id="toastLiveError"
+    >
+      <div class="toast-header bg-transparent justify-content-end text-white">
+        <button
+          type="button"
+          class="btn btn-secondary btn-sm bg-transparent border-0"
+          data-bs-dismiss="toast"
+        >
+          Close
+        </button>
+      </div>
+      <div class="toast-body text-white p-2">
+        <p class="text-capitalize text-center">
+          please fill in all fields!!!
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <script src="./js/script.js" defer></script>
+</body>
+</html>

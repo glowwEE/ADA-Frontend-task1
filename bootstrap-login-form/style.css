@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --pink-color: #ea4c89;
+}
+
+::-webkit-scrollbar {
+  background-color: #5f8d77;
+  width: 5px;
+  height: 5px;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--pink-color);
+  border-radius: 20px;
+}
+
+body {
+  font-weight: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+}
+
+.wrapper {
+  width: 90%;
+  margin: auto;
+  min-height: 100vh;
+  padding-bottom: 30px;
+}
+
+.zIndex-3 {
+  z-index: 40 !important;
+}
+
+.end-top-20 {
+  right: 20px !important;
+  top: 20px !important;
+}
+
+.header {
+  width: 100%;
+  z-index: 2;
+}
+
+.img-wrapper {
+  width: 75px;
+  height: 18px;
+  display: none;
+}
+
+.img-wrapper a {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.fs {
+  font-size: 14px;
+}
+
+.fs-custom {
+  font-size: 14px;
+}
+.fs-custom span {
+  color: var(--pink-color);
+}
+
+.w-90 {
+  width: 90%;
+}
+
+.thumbnail-figure {
+  width: 60px;
+  height: 45px;
+}
+
+.thumbnail-figure .active {
+  border: 3px solid var(--pink-color);
+  border-radius: 5px;
+  padding: 3px;
+}
+
+.thumbnail-figure a {
+  width: 100%;
+  height: 100%;
+}
+
+.thumbnail-figure a img {
+  width: 100%;
+  height: 100%;
+}
+
+.thumbnails-nav {
+  margin-top: 20px;
+}
+
+.body-content {
+  padding-top: 180px;
+}
+
+.w-custom {
+  width: 100%;
+}
+
+.card-image {
+  margin-bottom: 30px !important;
+  height: 400px;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ds {
+  font-family: "Gwendolyn", cursive;
+  font-weight: 900;
+}
+
+.mt-lg-40 {
+  margin-top: 20px;
+  font-family: "Mulish", sans-serif;
+}
+
+.form-label {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Mulish", sans-serif;
+}
+
+.form-control {
+  font-family: "Mulish", sans-serif;
+  outline: none;
+}
+
+.form-control:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.pt-80 {
+  width: 90%;
+  margin: auto;
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.btn-wrapper {
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.btn {
+  width: 100%;
+  height: 100%;
+}
+
+.or-wrapper {
+  width: 250px;
+  height: 1px;
+}
+
+.googleBtnContainer {
+  width: 250px;
+}
+
+.googleBtn {
+  width: 100%;
+  align-items: center;
+}
+
+.googleBtn:focus-visible {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.googleBtn button {
+  font-size: 14px;
+  font-weight: 600;
+  outline: none;
+}
+
+.google {
+  width: 40px;
+  height: 40px;
+}
+
+.googleBtn .btn:focus,
+.googleBtn .btn:active,
+.googleBtn .btn:hover {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.bd {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.pos-abs h3,
+.pos-abs p {
+  font-family: "Mulish", sans-serif;
+}
+
+.indicators {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+li {
+  width: 20px;
+  height: 10px;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+.bg-grey {
+  width: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.text-sm-14 {
+  font-size: 14px;
+}
+
+.text-sm-14::first-letter {
+  text-transform: capitalize;
+}
+
+@media (min-width: 576px) {
+  .fs {
+    font-size: 16px;
+  }
+
+  .thumbnails-nav {
+    margin-top: 0;
+  }
+
+  .body-content {
+    padding-top: 120px;
+  }
+}
+
+@media (min-width: 768px) {
+  .w-custom {
+    width: 50%;
+  }
+
+  .pt-80 {
+    padding-top: 80px;
+  }
+
+  .mt-lg-40 {
+    margin-top: 40px;
+  }
+
+  .card-image {
+    margin-bottom: 0 !important;
+    height: auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .fs {
+    font-size: 20px;
+  }
+}
